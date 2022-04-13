@@ -1,0 +1,88 @@
+body{
+    background: lightblue;
+    text-align: center;
+}
+
+
+
+
+.wrapper{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/* transform */
+
+
+    img{
+
+        /* translate */
+
+            /* transform: translateX(-200px);
+            transform: translateX(150px);
+            transform: translateY(200px);
+            transform: translateY(-100px); */
+            transform: translate(20px,20px);
+
+        /* scale */
+
+            /* transform: scaleX(2); strech along x 2 times
+            transform: scaleY(2); along y axis */
+            /* transform: scaleX(0.4);
+            transform: scaleY(0.4); */
+            /* transform: scale(2);
+            transform: scale(2,3); */
+
+
+        /* rotate */
+
+            /* transform: rotateX(120deg);
+            transform: rotateY(60deg);
+            transform: rotateZ(70deg); */
+
+
+        /* all three combined */
+
+            /* transform: rotateZ(70deg) translateX(200px) scale(2); */
+
+    }
+
+
+/* transitions */
+
+
+.circle{
+    width: 100px;
+    padding: 50px 0;
+    line-height: 0;
+    margin: 60px auto;
+    background: pink;
+    color: white;
+    border-radius: 54px;
+    cursor: pointer;
+
+    /* transition: 1s; */
+
+    /* different time for differnt property chnage */
+        /* transition: background-color 1s, transform 0.3s; */
+    
+    /* add delay */
+        /* transition: background-color 1s, transform 0.2s 3s ; */
+
+    /* speed of rotation */
+        /* transition: background-color 1s, transform 0.2s 3s linear;
+        transition: background-color 1s, transform 0.2s 3s ease-in;
+        transition: background-color 1s, transform 0.2s 3s ease-out; */
+
+}
+
+.circle:hover{
+    background-color: sienna;
+    transform: rotate(360deg);
+}
+    
+    
+
+    

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css6.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- html 5 semantics tags -->
+
+        <!-- A semantic element clearly describes its meaning to both the browser and the developer.
+
+            Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+
+            Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content. -->
+
+
+
+        <!-- main: for the main content of a webpage, unique to that page
+            section: defines a certain section of a webpage
+            article: defines a bit of content which makes up an article
+            aside: defines some content related to something else
+            header: for the header of a website-contains nav,title ets
+            footer: for the footer of a website -->
+
+
+        <header><h2>WinksClub</h2></header>
+        <section class="banner">
+            <img id="main" src="https://pics.filmaffinity.com/Winx_Club_TV_Series-346289585-mmed.jpg" alt="winkclub">
+            <div class="welcome">
+                <h2>Welcome to<br><span>WinksClub</span></h2>
+            </div>
+        </section>
+        
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Join the team</a></li>
+                <li><a href="#">Latest news</a></li>
+                <li><a href="#">New games</a></li>
+                <li><a href="#">Consult</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <article>
+                <h2>Its me bloom</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Necessitatibus aspernatur quis asperiores amet commodi,
+                      sit molestias odio nam iure repellat est ex at rerum qui
+                       laboriosam, debitis ad excepturi explicabo.</p>
+            </article>
+            <ul class="images">
+                <li ><img class="pictureone" src="https://i.pinimg.com/originals/8b/a6/17/8ba6171325251049ae0e01d21112bca1.jpg" alt=""></li>
+                <!-- <li><img src="https://static.wikia.nocookie.net/p__/images/2/25/Stella_%28Winx_Club%29.png/revision/latest?cb=20171208213644&path-prefix=protagonist" alt=""></li> -->
+                <li><img class="pictureone" src="data:image/jpeg;base64,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" alt=""></li>
+                <li><img class="pictureone" src="https://i.pinimg.com/originals/fa/42/4d/fa424dac61ad72d79a0c5b0699b7565c.png" alt=""></li>
+                <li><img class="pictureone" src="https://e7.pngegg.com/pngimages/242/964/png-clipart-musa-aisha-stella-winx-club-season-2-winx-club-dark-bloom.png" alt=""></li>
+            </ul>
+        </main>
+
+        <section class="join">
+            <h2>Join Today!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Natus, deserunt? Quo, aperiam. Explicabo ut officiis
+                  doloremque veniam natus odit ipsam laborum illo fugit
+                   voluptatum quia harum sapiente quis, autem debitis.</p>
+            <form >
+                <input type="email" name="email" placeholder="your email" required>
+            </form>
+        </section>
+
+        <footer>
+            <p class="copyright">copyright 2010 winks club</p>
+        </footer>
+    
+</body>
+</html>

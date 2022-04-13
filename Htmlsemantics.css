@@ -1,0 +1,286 @@
+
+
+body,ul,h1,h2,a{
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+}
+
+
+.banner{
+    position: relative;
+}
+
+.banner .welcome{
+    position: absolute;
+    left: 0px;
+    top: 30%;
+    background-color: #feb614;
+    color: white;
+    padding: 30px;
+}
+
+.banner h2{
+    font-size: 74px;
+}
+
+.banner span{
+    font-size: 1.2em;
+}
+
+.banner img{
+    max-width: 100%;
+}
+
+header{
+
+    position: fixed;
+    width: 100%;
+    /* z index o(by default) positive value(brings forward) negative value(pushes backward) */
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+
+    background-color: #f63232;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1{
+    color: white;
+    border: 4px solid white;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 36px;
+}
+
+nav{
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: sticky;
+    top: 86px;
+}
+
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #4b4b4b;
+}
+
+nav li a.join{
+    color: #f63232;
+}
+
+main{
+    max-width: 100% ;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+article h2{
+    color: #f63232;
+    font-size: 48px;
+}
+
+article p {
+    line-height: 2em;
+    color: #4b4b4b;
+}
+
+.images{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+
+}
+
+.images li{
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+}
+
+.images li img{
+    max-width: 100%;
+}
+
+section.join{
+    background: #F4F4F4;
+    text-align: center;
+    padding: 60px 20px;
+    color: #4B4B4B;
+  }
+  section.join h2{
+    font-size: 36px;;
+  }
+  form input{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 4px solid white;
+  }
+  
+  footer{
+    background: #F63232;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+
+
+/* pseudo classes */
+
+
+    nav li a:hover{
+        text-decoration: underline;
+        /* background-color: pink;
+        padding: 3px; */
+    }
+
+    .images li:hover{
+        position: relative;
+        top: -4px;
+    }
+
+    form input:focus{
+
+        border: 4px solid #4b4b4b;
+
+        outline: none;
+
+        
+
+    }
+
+    form input:valid{
+        border: 4px solid green;
+    }
+
+    nav li:first-child{
+        /* border: 3px solid red; */
+        text-decoration: underline;
+    }
+
+
+/* pseudo elements */
+
+    article p::first-line {
+
+        font-size: 1.2em;
+        font-weight: bold;
+
+    }
+
+    section.join p::first-letter{
+        font-size: 1.5em;
+    }
+
+    p::selection{
+        background-color: red;
+        color: white;
+    }
+
+    p::after{
+        content: "tehehehehehehe";
+    }
+
+
+/* media querires:used for making responsive designs */
+
+
+@media screen and (max-width:1100px){
+
+
+    .banner .welcome h2{
+        font-size: 60px;
+    }
+
+    nav li{
+        font-size: 18px;
+    }
+
+    
+
+}
+
+@media screen and (max-width:800px) {
+
+    .banner .welcome h2{
+        font-size: 40px;
+    }
+    
+}
+
+@media  screen and (max-width:600px) {
+
+    .banner .welcome {
+        position: relative;
+        text-align: center;
+        padding: 13px;
+    }
+
+    .banner .welcome br{
+        display: none;
+    }
+
+    .banner .welcome h2{
+        font-size: 30px;
+    }
+
+    .banner .welcome span{
+        font-size:1.1em ;
+        /* 1.1 times whatever the parent size is i.e. 30px(h2) */
+    }
+
+    .images li{
+        width: 100%;
+        margin: 20px auto;
+        
+    }
+
+
+    
+}
+
+@media  screen and (max-width:500px) {
+
+    nav li{
+        font-size: 20px;
+        position: relative;
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+
+    }
+
+    nav ul{
+        text-align: center;
+    }
+
+    header{
+        position: relative;
+    }
+
+    nav{
+        top: 0;
+    }
+    
+}
+
+  

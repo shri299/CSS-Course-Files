@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>HTML Forms</h1>
+    <form>
+        <label for="username">ENTER YOUR USERNAME:</label>
+        <input type="text" id="username" placeholder="enter username">
+        <br><br>
+        <label for="EMAIL">ENTER YOUR EMAIL:</label>
+        <input type="email" id="EMAIL" placeholder="enter email">
+        <br><br>
+        <label for="password">ENTER YOUR PASSWORD:</label>
+        <input type="password" id="password" placeholder="password" required>
+        <br><br>
+
+        <!-- radio button -->
+        <p>Select your age group:</p>
+            <input type="radio" name="age" id="option-1" value="0-25">
+            <label for="option-1">0-25</label>
+
+            <input type="radio" name="age" id="option-2" value="25-50">
+            <label for="option-2">25-50</label>
+
+            <input type="radio" name="age" id="option-3" value="50+">
+            <label for="option-3">50+</label>
+        <!-- if we remove the name attribute from every input then we can select more than one radio buttons -->
+
+
+        <!-- dropdown -->
+        <br><br>
+
+        <label for="ques">Security Qustion</label>
+        <select name="ques" id="ques"  >
+            <option value="q1">what color are your fav pair of socks</option>
+            <option value="q2">if you could be a veggie</option>
+            <option value="q3">your name please</option>
+        </select>
+        <br><br>
+
+        <!-- text area -->
+        <label for="whatever">hmm kahiye</label><br>
+        <textarea name="whatever" id="whatever" cols="30" rows="10" placeholder="bhaukiye..."></textarea>
+        <br>
+        <input type="submit" value="submit form">
+
+    </form>
+    
+</body>
+</html>

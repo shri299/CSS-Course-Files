@@ -1,0 +1,50 @@
+/* pseudo classes */
+
+h2:hover{
+
+    text-decoration: underline;
+    /* background-color: palevioletred; */
+    /* we can add the properties which we want to happen when we hover over h2 */
+}
+
+img:hover{
+    position: relative;
+    top: -4px;
+}
+
+input:focus{ 
+    border:palevioletred dotted;
+     outline: none;
+    /* for removing the orignal black color */
+    /* jab hum form m lokhne jae use keyup kre to vo is color ka ho jae */
+
+}
+input:valid{
+    border: 4px solid green;
+    /* jab email field valid bhara jaega to box green color ka ho jaega */
+}
+
+div h3:first-child{
+    border: 4px greenyellow solid;
+}
+
+h2::first-letter{
+    font-style: italic;
+    size: 10px;
+    color: gold;
+    /* jab hme kisi ke first letter ko style krna ho */
+}
+
+h4::selection{
+    background-color: cadetblue;
+}
+
+p::after{
+    content: " hmmm i seee";
+}
+
+
+/* responsive designs */
+
+
+

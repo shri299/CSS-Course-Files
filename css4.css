@@ -1,0 +1,49 @@
+h1{
+    color: turquoise;
+    background-color: pink;
+    font-size: 50px;
+    text-decoration: underline;
+    font-family: Arial;
+    text-align: center;
+}
+
+
+p{
+    color: tomato;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 3px;
+    /* divide the content of this paragraph in 3 col */
+    column-count: 3;
+    column-gap: 60px;
+    
+}
+ul{
+    border: 4px pink solid;
+    border-bottom: 4px rebeccapurple dotted;
+}
+li{
+    list-style-type: square;   /*to change bullet points */
+    text-shadow: 2px 2px lightcoral;
+     display: inline; /*changing to inline element */
+}
+span{
+       /* changing inline to block */
+      display: block;
+     margin: 20px;
+     padding: 20px;
+}
+div{
+    border: 2px solid blue;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+/* inline elements : dont take up any more room tha their content need(span img strong em a ) */
+/* they wont change line , can have margin only on left and right, padding all around (have padding collapse)*/
+
+/* block-level elements: take up the whole width of a page regardless of content(p div h2 h3 ul li) */
+/* they change line , margin all around, padding all around(have margin collapse)*/
+
+/* inline-block: sit next to each other(inline) but have margin and padding all around(block) */

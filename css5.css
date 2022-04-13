@@ -1,0 +1,37 @@
+.error{
+    color:red;
+}
+
+
+p.error{
+    color: rgb(10, 233, 107);
+}
+
+p.success{
+    color: rgb(38, 206, 38);
+}
+
+p.success.feedback{
+    border: 1px solid hotpink;
+}
+
+#content{
+    border: 2px solid rebeccapurple; 
+}
+/* all id's must be unique */
+
+
+/* decendent selectors:- target childrens */
+
+    div p{
+        text-decoration: underline;
+    }
+
+    div .error{
+        color: royalblue;
+    }
+    
+    /* when we mention attribute of element as wel */
+    a[href]{
+        color: saddlebrown;
+    }

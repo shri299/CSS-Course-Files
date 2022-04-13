@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="one.css">
+</head>
+<body>
+
+    <header>
+        <img src="https://github.com/iamshaunjp/styling-html5-forms-playlist/blob/master/img/logo.png?raw=true"/>
+    </header>
+
+    <form >
+        <!-- gender -->
+
+            <p>Your are a:</p>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+
+        <!-- interest -->
+
+            <p>Who is interested in...</p>
+            <input type="checkbox" id="web">
+            <label for="web">Web Development</label>
+            <br>
+            <input type="checkbox" id="photoshop">
+            <label for="photoshop">Photoshop</label>
+            <br>
+            <input type="checkbox" id="madona">
+            <label for="madona">Singing Madona songs</label>
+
+        <!-- contact details -->
+
+            <fieldset>
+                <legend>Contact Info</legend>
+            <input type="email" placeholder="Email" required>
+            <span class="tick"></span>
+            <input type="telephone" placeholder="Phone Number" required>
+            <span class="tick"></span>
+            </fieldset>
+
+        <!-- preffered contact -->
+
+            <p>How would you prefer to be contacted</p>
+            <select >
+                <option >By email</option>
+                <option >By telephone</option>
+            </select>
+
+            <input type="submit" value="Become a Ninja">
+    </form>
+
+    
+</body>
+</html>

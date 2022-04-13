@@ -1,0 +1,101 @@
+/*h1{
+	color:blue;
+}
+li{
+	color:pink;
+}
+h4{
+	color:green;
+}
+
+HEXADECIMAL SYSTEM OF COLORS IN CSS*/
+/*h1{
+	color:#00bb12;
+}
+li{
+	color:#6ff542;
+}
+h4{
+	color:#456799;
+}                        take help of the colour picker website
+
+THE RGB METHOD*/
+/*h1{
+	color: rgb(233,0,0);
+}
+li{
+	color: rgb(0,190,0);
+}
+h4{
+	color: rgb(0,0,107);
+}*/
+/*h1{
+	color:blue;
+	background:#397944;
+	border: 3px solid yellow;
+}
+li{
+	color:pink;
+	background:#782630;
+	border: 3px solid green ;
+}
+h2{
+	color:green;         this is called an element selector
+	background:#605433;
+	border: 3px solid blue;
+}
+body{
+	/*background:#95b647;*/
+	/*background:url(https://wallpaperaccess.com/full/267434.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#special{                this is called an id selector
+	color: purple;
+	/*background:#09a199;*/
+	/*border: 3px solid pink;
+	background:url(https://i.pinimg.com/736x/67/51/c5/6751c5ef2d282b4907fd800ed94f90df.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.complete{              this is called class selector*/
+	/*text-decoration: line-through;*/
+
+
+/*######STAR SELECTOR#####*/   /*every thing will have a border of the given properties*/
+/**{
+	border: 2px solid blue;
+}
+
+
+
+    DESCENDENT SELECTORS*/
+/*ul li{
+	border:2px solid green;   every li which is inside of an ul will habe a boreder of following property
+}                             or every li that hai id selector as special(li #special{}) will have following properties
+                              or every li that hai class selector as .complete(li .complete{}) will have following properties
+
+
+    ADJACENT SELECTOR*/
+/*h2 + ul{                    selects every ul that will come after an h2 in the whole code
+	border:2px solid red;
+}
+
+
+
+
+    ATTRIBUTE SELECTOR*/
+/* input[type="checkbox"]{       select by attribute
+ 	border:2px solid orange;
+ }
+
+
+
+
+
+
+
+     nth of type*/
+li: nth-of-type(2){
+	background: green;
+}

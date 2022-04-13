@@ -1,0 +1,100 @@
+*{
+    font-family: verdana;
+    margin: 0;
+}
+
+body{
+    background: #eee;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+nav{
+    background: #333;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: block;
+    /* so they take full width assigned to div(960px in this case) */
+    padding: 10px;
+}
+
+nav a:hover{
+    background-color: #555;
+}
+
+
+/* style the SM icons */
+    a.tw{
+        background: url(https://github.com/iamshaunjp/css-flexbox-playlist/blob/master/example-2/img/tw.png?raw=true) no-repeat center;
+        background-size: 60%;
+    }
+
+    a.fb{
+        background:url(https://github.com/iamshaunjp/css-flexbox-playlist/blob/master/example-2/img/fb.png?raw=true) no-repeat center;
+        background-size: 60%;
+    }
+
+    .social a{
+        text-indent: -10000px;
+    }
+
+    .social{
+        max-width: 80px;
+        margin: 0 auto;
+    }
+
+    nav ul.social{
+        flex: 1 1 0;
+        display: flex;
+    }
+
+    nav ul.social li{
+        flex: 1 1 0;
+    }
+
+
+@media screen and (min-width: 768px) {
+
+
+
+    nav ul{
+        display: flex;
+        /* justify-content: center;
+        justify-content: flex-end;
+        justify-content: flex-start;
+        justify-content: space-around ;
+        justify-content: space-between; */
+        
+    }
+
+    nav li{
+        flex: 1 1 0;
+        /* flex:  flex-grow flex-shrink flex-basis */
+    }
+
+    nav{
+        display: flex;
+        /* now both the ul are treated as flex items and not single li elements */
+        justify-content: space-between;
+    }
+
+    .social{
+        margin: 0px;
+    }
+
+    
+    
+}

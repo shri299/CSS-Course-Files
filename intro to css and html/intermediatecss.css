@@ -1,0 +1,70 @@
+  /* 1) FONT FAMILY*/
+
+  p{
+  	font-family: arial;
+  }
+ /* #special{
+  	font-family: rockwell;
+  }*/
+
+
+/*     2)FONT SIZE*/
+
+h1{
+	font-size:60px;
+}
+span{
+	font-size: 2.0em;
+}
+
+
+      /* 3)FONT WEIGHT*/
+
+p{
+	font-weight: bold;
+}
+/*#special{
+	font-weight: normal;
+}*/
+
+
+       /* 4)LINE HEIGHT*/
+
+p{
+	line-height: 2;
+}
+
+
+
+         /* 5)TEXT ALIGN*/
+
+h1{
+	text-align: center;
+}
+p{
+	text-align: center;
+}
+
+
+
+          /* 6)TEXT DECORATION*/
+
+h1{
+	text-decoration: underline;
+}
+span{
+	text-decoration: line-through;
+}
+
+
+
+        /* GOOGLE FONTS*/
+
+
+h1{
+	font-family: 'Indie Flower', cursive;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+   
+}

@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex-container{
+    height: 800px;
+    display: flex;
+    background:#fff;
+    flex-wrap: wrap;
+    /* flex-flow: column; */
+    /* flex-flow: column-reverse; */
+    /* row is default behaviour of flex. But if we set it to column one block now bcms column
+       and the flex basis(100px) now bcms the height of the block and not thw width */
+
+       /* justify-content: center; */
+       /* justify-content: flex-end; */
+       justify-content: center;
+
+       align-items: center;
+}
+
+.box{
+    height: 100px;
+    flex: 0 0 100px;
+}
+
+.one{
+    background:red;
+}
+
+.two{
+    background: blue;
+}
+
+.three{
+    background: green;
+}
+
+/* main axis and flow axis
+   elements always follow the flow of main axis */
